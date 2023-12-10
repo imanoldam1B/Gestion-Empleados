@@ -1,0 +1,26 @@
+﻿<Window x:Class="GestionEmpleados2023.AgregarEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionEmpleados2023"
+        mc:Ignorable="d"
+        Title="AgregarEmpleado" Height="350" Width="550">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Nombre:"/>
+            <TextBox x:Name="txtNombre" Margin="0,0,0,10"/>
+
+            <Label Content="Apellidos:"/>
+            <TextBox x:Name="txtApellidos" Margin="0,0,0,10"/>
+
+            <Label Content="¿Es Usuario?"/>
+            <CheckBox x:Name="chkEsUsuario" Margin="0,0,0,10"/>
+
+            <Label Content="Edad:"/>
+            <TextBox x:Name="txtEdad" Margin="0,0,0,10"/>
+
+            <Button Content="Agregar Empleado" Command="{Binding GuardarCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
